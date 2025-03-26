@@ -81,6 +81,236 @@ Add  duplicate column with upper or lower case
 Boolean :
 Boolean (True/False) operations in Pandas, a popular Python library for data manipulation. Here's a quick guide:
 ![image](https://github.com/user-attachments/assets/0af705b6-bd91-4896-a5ab-961dc350f4b1)
+Sort: -
+If "ascending order" is set to false, the data frame will be displayed in ascending order. Conversely, if it is set to true, the data frame will be shown in descending order.
+
+![image](https://github.com/user-attachments/assets/95176efd-2f93-4a72-a7c9-5ea95d0dfce0)
+
+* Index:-
+set_index()- Changes the current index to a specified column or set of columns.
+
+![image](https://github.com/user-attachments/assets/0fb23edf-1dd4-4aba-aa23-ad120bd37fa1)
+
+reset_index(): Resets the index to the default integer index.
+
+![image](https://github.com/user-attachments/assets/2ed578b5-3397-4354-9676-0bbcdf858434)
+
+sort_index(): Sorts the data by its index.
+![image](https://github.com/user-attachments/assets/d9470469-5a91-4082-8aee-2152b1b8a6d8)
+
+Query Method :-
+The query() function allows you to use a string-based query expression to filter data.
+
+![image](https://github.com/user-attachments/assets/9ca73949-dd2d-4f0b-90ba-bc10b90e6e07)
+
+* Comprehensive Guide to Data Analysis and Aggregation: -
+   i)Descriptive statistics
+
+   ii)Window functions
+
+   iii)Cross-tabulation
+
+   iv)Advanced aggregation 
+
+Creating a data frame based on date, product, sales, quantity, and region.
+
+![image](https://github.com/user-attachments/assets/248ec058-281f-41d1-8e13-50e6033420e1)
+ i)Descriptive statistics
+
+summary of descriptive statistics for two variables: Sales and Quantity. Here's what each metric tells us:
+•	Count: Total number of data points (6 for both columns).
+•	Mean: The average value (225 for Sales, 22.5 for Quantity).
+•	Std (Standard Deviation): Measures the spread of the data around the mean (Sales varies by ~93.54, Quantity by ~9.35).
+•	Min: The smallest value in the dataset (100 for Sales, 10 for Quantity).
+•	25%, 50%, 75%: Percentiles, which divide the data into quarters:
+o	25%: 25% of the data is below this value (162.5 for Sales, 16.25 for Quantity).
+o	50% (Median): The middle value when data is sorted (225 for both columns).
+o	75%: 75% of the data is below this value (287.5 for Sales, 28.75 for Quantity).
+•	Max: The largest value in the dataset (350 for Sales, 35 for Quantity).
+
+![image](https://github.com/user-attachments/assets/72f24fee-ea09-44fe-a02e-66ea7a43aaf9)
+
+b. Correlation and Covariance (corr, cov)
+Correlation measures the relationship between two variables, while covariance measures how two variables change together.
+* Correlation matrix
+The correlation between Sales and Quantity is also 1.0, indicating a perfect positive correlation. This means as Sales increase, Quantity increases proportionally (and vice versa).
+
+![image](https://github.com/user-attachments/assets/eb0ab19f-8121-4d49-8d25-fdd7c1bddd98)
+
+* Covariance matrix
+
+•  The covariance of Sales with itself is 8750.0, representing the variance within the Sales variable.
+
+•  The covariance between Sales and Quantity is 875.0, showing a positive association—an increase in Sales corresponds to an increase in Quantity.
+
+•  The covariance of Quantity with itself is 87.5, indicating the variance within the Quantity variable.
+
+![image](https://github.com/user-attachments/assets/526fb34a-7cd8-42da-b24c-28bd76d2b5c1)
+
+c. Counting Unique Values (value_counts)
+The value_counts() function counts the occurrences of unique values in a column.
+
+![image](https://github.com/user-attachments/assets/8d62ff76-d649-4af6-959a-eb5e39e86142)
+
+2. Window Functions
+Window functions perform calculations over a sliding window of rows.
+a. Rolling Windows (rolling)
+Rolling windows compute statistics over a fixed-size window of rows. Commonly used for moving averages, sums, or standard deviations.
+![image](https://github.com/user-attachments/assets/2b195f79-ea27-43c3-9c3a-cd430f7fa4ca)
+
+b. Expanding Window
+This is a cumulative sum of Sales, considering all rows up to the current row.
+![Screenshot 2025-03-24 120025](https://github.com/user-attachments/assets/f68c1a69-5be7-4d7b-9e20-9b882f4ad6c2)
+3. Cross-Tabulation (crosstab)
+Cross-tabulation is used to summarize the relationship between two categorical variables.
+![image](https://github.com/user-attachments/assets/8c563eda-0b1e-4ab8-a2f4-a7ac7918428e)
+4. Advanced Aggregation (agg)
+This function allows you to apply multiple aggregation functions to columns.
+![image](https://github.com/user-attachments/assets/f663a0a1-2413-49d0-8e50-33dd9f782603)
+
+## Numpy :-
+NumPy (short for "Numerical Python") is a fundamental library in Python for numerical and scientific computing.
+![image](https://github.com/user-attachments/assets/5c5591ce-0c2a-4786-b6ad-4bf123e009bb)
+![image](https://github.com/user-attachments/assets/a60bc81d-d058-432b-9439-dad3e81ae937)
+To check the name of numpy formulas.
+![image](https://github.com/user-attachments/assets/fcc2a60e-fe87-48d2-b0c3-ac79c037126b)
+
+Array:-
+Array is a collection of elements
+np.array
+![image](https://github.com/user-attachments/assets/645e65de-df09-47ca-a79d-488165b33ff5)
+np.zeros
+![image](https://github.com/user-attachments/assets/5403e4a3-d572-4f26-b890-a555a19b08da)
+This looks like a 5x8 matrix filled with zeros, which is a great way to initialize arrays for numerical computations or placeholder data.
+Np.ones
+![image](https://github.com/user-attachments/assets/152bee82-e3e1-4d80-abc5-123ef592f0df)
+one-dimensional array there, and it's likely you're exploring operations with arrays. Here's how you can create it using NumPy:
+python
+![image](https://github.com/user-attachments/assets/2165497a-665e-4051-b5e5-9b6f8275ead3)
+np.linspace():-
+
+It looks like you have a NumPy array with values that increase incrementally!
+
+![image](https://github.com/user-attachments/assets/77781962-2fcd-4133-b0af-682a768b264c)
+2D dimensional array :-
+
+![image](https://github.com/user-attachments/assets/ec859330-d720-4087-afe4-9e4b83a0f5a0)
+
+It seems you're indicating the shape of a 2D array. In NumPy, the shape of an array tells you its dimensions—in this case, it's a matrix with 2 rows and 3 columns.
+
+Find out the data frame type :-
+![image](https://github.com/user-attachments/assets/7216553d-a71d-400b-b5ab-2ec26ed0a5fa)
+
+Find out the elements of array:-
+
+The total size of the elements in your array represents the number of elements it contains. In this case, the shape (2, 3) indicates 2 rows and 3 
+columns
+![image](https://github.com/user-attachments/assets/d1a1a0b0-fdc0-4d48-84bf-1d6cbec19ac9)
+Number of dimensions:
+
+A 2-dimensional array, like our example, has two dimensions: rows and columns.
+
+![image](https://github.com/user-attachments/assets/89737074-8fbd-4d9e-949a-c62bc23aaf02)
+
+
+* Mathematical Operator
+![image](https://github.com/user-attachments/assets/7cd55c94-a2e0-4f58-8a51-c827975b64a0)
+Addition:
+
+NumPy performs element-wise addition. If the arrays have the same shape, corresponding elements are added.
+
+Subtraction:
+
+Element-wise subtraction is performed. Each element of the first array is subtracted by the corresponding element of the second array.
+
+Multiplication:
+
+NumPy performs element-wise multiplication, which multiplies corresponding elements together.
+Division:
+NumPy divides elements of the first array by the corresponding elements of the second array.
+
+
+![image](https://github.com/user-attachments/assets/7a1d1ca5-1814-49e0-a346-c87c837295b6)
+
+Square Root (np.sqrt):-
+
+The np.sqrt() function computes the square root of each element in an array. It works element-wise on arrays and returns the result.
+Exponentiation (np.exp)
+The np.exp() function calculates the exponential of each element in an array.
+
+![image](https://github.com/user-attachments/assets/a99e24d3-f2e3-48f1-a119-9b2cc04e2995)
+
+Sum: Adds all elements together.
+
+Max: Finds the largest value in the array.
+
+Min: Finds the smallest value in the array.
+
+Variance: Measures the spread of the data.
+
+Sum Array: computes the sum of elements in an array, either across all elements or along a specified axis in the case of multidimensional arrays.
+
+* Logical Operator: -
+
+In NumPy, logical operators are used to perform element-wise logical operations on arrays. These operators help you to compare arrays and obtain Boolean results (True or False) for each element.
+Some of the commonly used logical functions in NumPy include:
+
+![image](https://github.com/user-attachments/assets/1f1ae0d2-ee1e-417c-90ae-9b77702e6cdc)
+The > and < operators are applied to each element in the array, creating a new Boolean array where the condition is evaluated for each element. These Boolean arrays can be used for filtering or masking data.
+
+Vstack Array:
+
+ In NumPy, vstack (vertical stacking) is used to stack arrays vertically, meaning along the first axis (axis=0). It combines arrays into a single array where the arrays are added as new rows.
+ ![image](https://github.com/user-attachments/assets/3f9be29a-8160-4916-9ead-485e7bf0eb00)
+This combines all the arrays vertically (adding each as a new row) into a 2D array.
+
+Hstack: 
+
+The hstack function in NumPy horizontally stacks arrays, meaning it joins arrays along the second axis (axis=1 for 2D arrays). It appends arrays side by side, provided they are compatible in dimensions.
+
+![image](https://github.com/user-attachments/assets/54e54920-464d-4360-9f6d-52c3480ed99e)
+
+Dstack:
+
+ In NumPy, dstack (depth stacking) is used to stack arrays along the third dimension. This means the arrays are added "depth-wise," creating a 3D array. It's commonly used when you need to combine arrays into layers.
+
+![image](https://github.com/user-attachments/assets/baedf188-cd80-4ac1-86e7-b1daad448ddc)
+
+Concatinate:
+
+ In NumPy, concatenation refers to joining two or more arrays along an existing axis. You can use the numpy.concatenate function for this purpose.
+
+![image](https://github.com/user-attachments/assets/ec468deb-3f12-4137-b24d-c61798f2995d)
+axis=0: Combines arrays vertically (adds rows). The number of columns must match.
+axis=1: Combines arrays horizontally (adds columns). The number of rows must match.
+
+
+Splitting:- 
+
+In NumPy, splitting refers to dividing an array into multiple subarrays
+![image](https://github.com/user-attachments/assets/76d6bcab-b141-4819-be00-80907bf98314)
+
+numpy.split: Splits an array into multiple subarrays along a specified axis.
+
+numpy.hsplit (Horizontal Split): Splits an array into subarrays along the columns
+
+numpy.vsplit (Vertical Split):Splits an array into subarrays along the rows
+
+numpy.dplit (dimension split): The dsplit function in NumPy is specifically designed to split arrays along the third dimension (depth) of 3D arrays.  
+
+![image](https://github.com/user-attachments/assets/ccf8186e-bc7c-4d37-8470-2124ac488968)
+
+Transpose:-
+
+In NumPy, the transpose of an array flips its axes. Specifically, rows become columns and columns become rows.
+![image](https://github.com/user-attachments/assets/5bfcb6c6-a9dc-4d47-a4ea-f7ae38dc2904)
+
+Swapaxes:-
+
+ The numpy.swapaxes function allows you to interchange two axes of an array. This is particularly useful for reshaping or reorganizing multidimensional arrays without changing the data.
+
+![image](https://github.com/user-attachments/assets/91b71249-fe04-434a-a4bb-ad6e58f26821)
+
 
 
 
