@@ -1,5 +1,5 @@
 
-# Blending Data Organization and Computation with Pandas NumPy
+# Blending Data Organization and Computation with Pandas, NumPy,Matplotlib
 
 
 # PANDAS: 
