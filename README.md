@@ -228,9 +228,7 @@ iV) Division: NumPy divides elements of the first array by the corresponding ele
 
 ![image](https://github.com/user-attachments/assets/7a1d1ca5-1814-49e0-a346-c87c837295b6)
 
-* Square Root (np.sqrt):-
-
-i)The np.sqrt():- function computes the square root of each element in an array. It works element-wise on arrays and returns the result.
+i) Square Root (np.sqrt):-The np.sqrt():- function computes the square root of each element in an array. It works element-wise on arrays and returns the result.
 ii) Exponentiation (np.exp):- The np.exp() function calculates the exponential of each element in an array.
 
 ![image](https://github.com/user-attachments/assets/a99e24d3-f2e3-48f1-a119-9b2cc04e2995)
