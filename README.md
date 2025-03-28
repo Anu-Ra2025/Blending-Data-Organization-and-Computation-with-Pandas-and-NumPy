@@ -214,25 +214,21 @@ A 2-dimensional array, like our example, has two dimensions: rows and columns.
 
 
 * Mathematical Operator
+
 ![image](https://github.com/user-attachments/assets/7cd55c94-a2e0-4f58-8a51-c827975b64a0)
-Addition:
 
-NumPy performs element-wise addition. If the arrays have the same shape, corresponding elements are added.
+i) Addition:- NumPy performs element-wise addition. If the arrays have the same shape, corresponding elements are added.
 
-Subtraction:
+ii) Subtraction:- Element-wise subtraction is performed. Each element of the first array is subtracted by the corresponding element of the second array.
 
-Element-wise subtraction is performed. Each element of the first array is subtracted by the corresponding element of the second array.
+iii) Multiplication:NumPy performs element-wise multiplication, which multiplies corresponding elements together.
 
-Multiplication:
-
-NumPy performs element-wise multiplication, which multiplies corresponding elements together.
-Division:
-NumPy divides elements of the first array by the corresponding elements of the second array.
+iV) Division: NumPy divides elements of the first array by the corresponding elements of the second array.
 
 
 ![image](https://github.com/user-attachments/assets/7a1d1ca5-1814-49e0-a346-c87c837295b6)
 
-Square Root (np.sqrt):-
+* Square Root (np.sqrt):-
 
 The np.sqrt() function computes the square root of each element in an array. It works element-wise on arrays and returns the result.
 Exponentiation (np.exp)
@@ -258,25 +254,25 @@ Some of the commonly used logical functions in NumPy include:
 ![image](https://github.com/user-attachments/assets/1f1ae0d2-ee1e-417c-90ae-9b77702e6cdc)
 The > and < operators are applied to each element in the array, creating a new Boolean array where the condition is evaluated for each element. These Boolean arrays can be used for filtering or masking data.
 
-Vstack Array:
+* Vstack Array:
 
  In NumPy, vstack (vertical stacking) is used to stack arrays vertically, meaning along the first axis (axis=0). It combines arrays into a single array where the arrays are added as new rows.
  ![image](https://github.com/user-attachments/assets/3f9be29a-8160-4916-9ead-485e7bf0eb00)
 This combines all the arrays vertically (adding each as a new row) into a 2D array.
 
-Hstack: 
+* Hstack: 
 
 The hstack function in NumPy horizontally stacks arrays, meaning it joins arrays along the second axis (axis=1 for 2D arrays). It appends arrays side by side, provided they are compatible in dimensions.
 
 ![image](https://github.com/user-attachments/assets/54e54920-464d-4360-9f6d-52c3480ed99e)
 
-Dstack:
+* Dstack:
 
  In NumPy, dstack (depth stacking) is used to stack arrays along the third dimension. This means the arrays are added "depth-wise," creating a 3D array. It's commonly used when you need to combine arrays into layers.
 
 ![image](https://github.com/user-attachments/assets/baedf188-cd80-4ac1-86e7-b1daad448ddc)
 
-Concatinate:
+* Concatinate:
 
  In NumPy, concatenation refers to joining two or more arrays along an existing axis. You can use the numpy.concatenate function for this purpose.
 
@@ -285,7 +281,7 @@ axis=0: Combines arrays vertically (adds rows). The number of columns must match
 axis=1: Combines arrays horizontally (adds columns). The number of rows must match.
 
 
-Splitting:- 
+* Splitting:- 
 
 In NumPy, splitting refers to dividing an array into multiple subarrays
 ![image](https://github.com/user-attachments/assets/76d6bcab-b141-4819-be00-80907bf98314)
@@ -300,202 +296,17 @@ numpy.dplit (dimension split): The dsplit function in NumPy is specifically desi
 
 ![image](https://github.com/user-attachments/assets/ccf8186e-bc7c-4d37-8470-2124ac488968)
 
-Transpose:-
+* Transpose:-
 
 In NumPy, the transpose of an array flips its axes. Specifically, rows become columns and columns become rows.
 ![image](https://github.com/user-attachments/assets/5bfcb6c6-a9dc-4d47-a4ea-f7ae38dc2904)
 
-Swapaxes:-
+* Swapaxes:-
 
  The numpy.swapaxes function allows you to interchange two axes of an array. This is particularly useful for reshaping or reorganizing multidimensional arrays without changing the data.
 
 ![image](https://github.com/user-attachments/assets/91b71249-fe04-434a-a4bb-ad6e58f26821)
 
-
-
-Matplotlib in Python
-Matplotlib is a popular Python library used for data visualization. It allows users to create static, animated, and interactive visualizations in Python. It is widely used in data science, machine learning, and analytics to represent data in an understandable way.
-
-Uses of Matplotlib
-1.	Data Analysis & Exploration – Helps in understanding data patterns and distributions.
-2.	Scientific & Engineering Applications – Used in research for plotting graphs of equations.
-3.	Machine Learning & AI – Visualizes model performance and comparisons.
-4.	Business & Financial Analysis – Helps in presenting reports and dashboards.
-5.	Real-time Data Monitoring – Used for tracking trends in various domains.
-Install Matplotlib in VS Code:-
-Use the code “pip install matplotlib
-![image](https://github.com/user-attachments/assets/804606bd-1834-4de8-9f11-6065025cffc0)
-Working area of the VS Code write :” import matplotlib.pyplot as plt”
-![image](https://github.com/user-attachments/assets/d63e792c-5c0e-4956-9870-b23405101329)
-Basic Parameters in Matplotlib
-When plotting with Matplotlib, we often adjust certain parameters to control the appearance of the graph. Some important parameters include:
-1.	figsize – Controls the size of the figure (e.g., figsize=(10,5))
-2.	color – Sets the color of the plot (e.g., color='red')
-3.	label – Adds labels to axes or legends (e.g., label='Sales')
-4.	linewidth (lw) – Sets the width of the plot lines (e.g., linewidth=2)
-5.	linestyle (ls) – Defines the line type (e.g., linestyle='dashed')
-6.	marker – Adds markers to points in a plot (e.g., marker='o')
-7.	title – Sets the title of the plot (e.g., title='Sales Report')
-8.	xlabel, ylabel – Labels the x-axis and y-axis (e.g., xlabel='Months', ylabel='Revenue')
-9.	grid – Enables grid lines in the plot (e.g., grid=True)
-10.	alpha – Sets the transparency of the plot (e.g., alpha=0.5)
-
-
-1.Figsize:-
-Purpose:
-This parameter is used to control the size of the entire figure (the overall plot area). It is particularly useful when you want to make the plot larger or smaller depending on your needs.
-Definition:
-figsize takes a tuple of (width, height) in inches.
-![image](https://github.com/user-attachments/assets/6dac03cd-c0b2-49d8-a4ff-a72ee8e35204) 
- 
-Color:-
-•	Purpose:
-The color parameter is used to set the color of the plot elements (lines, markers, etc.).
-![image](https://github.com/user-attachments/assets/25abef06-909a-4aa9-a614-760b901feea7) 
-
- 
-
-Label :-
-•	Purpose:
-The label parameter is used to provide a label for the plot. This label is typically used for the legend, which helps identify multiple data series in the same plot.
-![image](https://github.com/user-attachments/assets/3a679107-e4cf-4b56-ac35-601b12f8698f)
- 
-
-Linewidth (or lw):-
-•	Purpose:
-This parameter controls the thickness of the plot lines. A larger value will make the lines thicker and more prominent.
-![image](https://github.com/user-attachments/assets/8525b96e-3fef-4dfe-8925-0891ba3b72a9)
-
- 
-
-Linestyle (or ls):-
-•	Purpose:
-The linestyle parameter defines how the plot lines are drawn. You can use different styles, such as solid, dashed, or dotted lines.
-![image](https://github.com/user-attachments/assets/30a9d9e1-1143-4c74-adbb-01dc50fb69f7)
-![image](https://github.com/user-attachments/assets/adeeecd4-18a4-4c70-9117-d2f14d809628)
-![image](https://github.com/user-attachments/assets/2c3c6d46-4bcc-4e0a-87bf-cc8629122066)
-   
-
-Marker :-
-•	Purpose:
-The marker parameter adds markers to the data points. These markers are symbols that appear at each data point, helping to make individual data points more visible.
-'o' for circle
-      's' for square
-   'd' for diamond
-   'x' for cross
-   '+' for plus sign
-
-![image](https://github.com/user-attachments/assets/212af9da-bb0d-45a1-9740-248c7af85ac9)
-![image](https://github.com/user-attachments/assets/0fe2cbf4-e015-4ae7-b2ca-7a2ee1e48443)
-![image](https://github.com/user-attachments/assets/e5ec1e7e-0699-4011-a0e8-186b85219bd6)
-![image](https://github.com/user-attachments/assets/8d8b0431-be1b-4e1e-8769-623a41426584)
-![image](https://github.com/user-attachments/assets/57ea125a-67e6-437d-9acd-c562a24db623)
-     
-
-Here’s a table showing the list of markers available in Matplotlib along with an example of how each marker looks in a plot.
- 
-
-7. title
-•	Purpose:
-The title parameter is used to set the title of the plot, which typically appears at the top of the figure. This is important for providing context about the plot.
-![image](https://github.com/user-attachments/assets/891562e4-6a7e-457e-bb39-5b7fd94f8b49)
- 
-Xlabel and Ylabel
-•	Purpose:
-The xlabel and ylabel parameters are used to label the x-axis and y-axis, respectively. These labels help provide context for what each axis represents.
-![image](https://github.com/user-attachments/assets/020685d1-fbf5-4bc6-a0f7-414844710794)
- 
-Grid:-
-•	Purpose:
-The grid parameter enables or disables the grid lines in the plot. Grid lines can help improve readability, especially in plots with a lot of data points.
-
-Grid lines will be enabled, which can make it easier to read the values and interpret the plot. Use grid(False) to disable grid lines.
-![image](https://github.com/user-attachments/assets/b691610d-b68d-4923-99ae-6066ea752b66)
-![image](https://github.com/user-attachments/assets/b2a6d1fb-674f-465a-a93f-61fce62c7b15)
-  
-Alpha:-
-Purpose:
-The alpha parameter controls the transparency of the plot elements. A value of 1 means fully opaque, and 0 means fully transparent.
-![image](https://github.com/user-attachments/assets/ef28024b-9c0e-4123-b843-a985fc427df2)
- 
-
-Combining All Parameters
-![image](https://github.com/user-attachments/assets/0fabc3cb-d875-4e19-a8f7-248b921bb15a)
- 
-
-
-
-
-
-
-List of Plots in Matplotlib
-1.Line Plot (plt.plot())
-Purpose:
-•	Used for trend analysis over time.
-•	Ideal for continuous data (e.g., stock prices, temperature changes).
-![image](https://github.com/user-attachments/assets/7f03693d-e256-42da-ade4-83eb1c34313b)
- 
-
-
-
-2. Bar Chart (plt.bar())
-Purpose:
-•	Used to compare categories.
-•	Suitable for discrete data (e.g., sales in different months).
-![image](https://github.com/user-attachments/assets/737ac259-3b44-4b5d-bedc-f2a13dd371ef)
- 
-
-3. Histogram (plt.hist())
-Purpose:
-•	Used for frequency distribution.
-•	Ideal for continuous data grouped into bins (e.g., age distribution).
-![image](https://github.com/user-attachments/assets/6bd44525-51d2-46fd-a880-b32a64b4f4aa)
- 
-
-4. Scatter Plot (plt.scatter())
-Purpose:
-•	Used to show relationships between two variables.
-•	Helpful for correlation analysis (e.g., height vs. weight).
-![image](https://github.com/user-attachments/assets/6b7fb5c0-fbdc-4f61-8275-dba121fb4413)
- 
-
-5. Pie Chart (plt.pie())
-Purpose:
-•	Used to show proportions of a whole.
-•	Ideal for percentage-based distributions.
-![image](https://github.com/user-attachments/assets/3047bceb-a468-4376-9b14-ed80f4b73c01)
- 
-
-6. Box Plot (plt.boxplot()):-
-Purpose:
-•	Used to show data spread and outliers.
-•	Ideal for statistical analysis (e.g., salary distribution).
-![image](https://github.com/user-attachments/assets/437f1fd6-ff57-4260-b56f-65565c6f48ce)
- 
-7. Area Plot (plt.fill_between())
-Purpose:
-•	Used for cumulative data representation.
-•	Helps to highlight areas under a curve.
-![image](https://github.com/user-attachments/assets/154803d1-b4f5-4650-b105-84160399efd8)
- 
-
-8. Stacked Bar Chart:-
-Purpose:
-•	Used to compare proportions within categories.
-![image](https://github.com/user-attachments/assets/5987f348-1aba-4e82-9299-38583f957fa0)
- 
-
-9. Heatmap (plt.imshow())
-Purpose:
-•	Used to visualize matrix data as colors.
-•	Useful for correlation and patterns in large datasets.
-![image](https://github.com/user-attachments/assets/e3582557-d808-4472-9cd8-d06ad86f6222)
- 
-10. 3D Plot (Axes3D)
-Purpose:
-•	Used for visualizing three-dimensional data.
-•	Ideal for scientific and engineering data.
-![image](https://github.com/user-attachments/assets/e2c91a6a-7d66-49f9-ab72-63cf1c73d6dc)
 
 # Matplotlib in Python
 Matplotlib is a popular Python library used for data visualization. It allows users to create static, animated, and interactive visualizations in Python. It is widely used in data science, machine learning, and analytics to represent data in an understandable way.
