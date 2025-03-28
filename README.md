@@ -649,74 +649,82 @@ Combining All Parameters
 
 
 
-List of Plots in Matplotlib
-1.Line Plot (plt.plot())
+##  List of Plots in Matplotlib
+* 1.Line Plot (plt.plot())
 Purpose:
 •	Used for trend analysis over time.
 •	Ideal for continuous data (e.g., stock prices, temperature changes).
 ![image](https://github.com/user-attachments/assets/7f03693d-e256-42da-ade4-83eb1c34313b)
+![Image](https://github.com/user-attachments/assets/f23b10c4-5cfa-4b07-90e2-8ba7d83982d4)
  
-
-
-
-2. Bar Chart (plt.bar())
+* 2. Bar Chart (plt.bar())
 Purpose:
 •	Used to compare categories.
 •	Suitable for discrete data (e.g., sales in different months).
 ![image](https://github.com/user-attachments/assets/737ac259-3b44-4b5d-bedc-f2a13dd371ef)
+![Image](https://github.com/user-attachments/assets/dd775530-4234-4b0c-8afb-b23a017016b9)
  
 
-3. Histogram (plt.hist())
+* 3. Histogram (plt.hist())
 Purpose:
 •	Used for frequency distribution.
 •	Ideal for continuous data grouped into bins (e.g., age distribution).
 ![image](https://github.com/user-attachments/assets/6bd44525-51d2-46fd-a880-b32a64b4f4aa)
+![Image](https://github.com/user-attachments/assets/af38e229-b296-449e-9745-97206efc1a7e)
  
 
-4. Scatter Plot (plt.scatter())
+* 4. Scatter Plot (plt.scatter())
 Purpose:
 •	Used to show relationships between two variables.
 •	Helpful for correlation analysis (e.g., height vs. weight).
 ![image](https://github.com/user-attachments/assets/6b7fb5c0-fbdc-4f61-8275-dba121fb4413)
+![Image](https://github.com/user-attachments/assets/70fb3807-45cc-44c0-a90e-2ad7d615c1a6)
  
 
-5. Pie Chart (plt.pie())
+* 5. Pie Chart (plt.pie())
 Purpose:
 •	Used to show proportions of a whole.
 •	Ideal for percentage-based distributions.
 ![image](https://github.com/user-attachments/assets/3047bceb-a468-4376-9b14-ed80f4b73c01)
+![Image](https://github.com/user-attachments/assets/0baac712-8211-4325-ac17-4cc582e2b32a)
  
 
-6. Box Plot (plt.boxplot()):-
+* 6. Box Plot (plt.boxplot()):-
 Purpose:
 •	Used to show data spread and outliers.
 •	Ideal for statistical analysis (e.g., salary distribution).
 ![image](https://github.com/user-attachments/assets/437f1fd6-ff57-4260-b56f-65565c6f48ce)
+![Image](https://github.com/user-attachments/assets/753a31d1-0348-412a-bf73-e5608999985f)
  
-7. Area Plot (plt.fill_between())
+* 7. Area Plot (plt.fill_between())
 Purpose:
 •	Used for cumulative data representation.
 •	Helps to highlight areas under a curve.
 ![image](https://github.com/user-attachments/assets/154803d1-b4f5-4650-b105-84160399efd8)
+![Image](https://github.com/user-attachments/assets/982d1d56-9fb2-4747-836f-13d6a6509e5a)
  
 
-8. Stacked Bar Chart:-
+* 8. Stacked Bar Chart:-
 Purpose:
 •	Used to compare proportions within categories.
 ![image](https://github.com/user-attachments/assets/5987f348-1aba-4e82-9299-38583f957fa0)
+![Image](https://github.com/user-attachments/assets/29095f6f-7a4d-47a5-9cff-3b260e6cede9)
+
  
 
-9. Heatmap (plt.imshow())
+* 9. Heatmap (plt.imshow())
 Purpose:
 •	Used to visualize matrix data as colors.
 •	Useful for correlation and patterns in large datasets.
 ![image](https://github.com/user-attachments/assets/e3582557-d808-4472-9cd8-d06ad86f6222)
+![Image](https://github.com/user-attachments/assets/643a9b26-cbc5-44db-9a3d-a18223ba95b9)
  
-10. 3D Plot (Axes3D)
+* 10. 3D Plot (Axes3D)
 Purpose:
 •	Used for visualizing three-dimensional data.
 •	Ideal for scientific and engineering data.
 ![image](https://github.com/user-attachments/assets/e2c91a6a-7d66-49f9-ab72-63cf1c73d6dc)
+![Image](https://github.com/user-attachments/assets/34108e41-a2e8-4d6c-9708-7dd6ca457e2c)
  
  
 
