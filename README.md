@@ -230,21 +230,20 @@ iV) Division: NumPy divides elements of the first array by the corresponding ele
 
 * Square Root (np.sqrt):-
 
-The np.sqrt() function computes the square root of each element in an array. It works element-wise on arrays and returns the result.
-Exponentiation (np.exp)
-The np.exp() function calculates the exponential of each element in an array.
+i)The np.sqrt():- function computes the square root of each element in an array. It works element-wise on arrays and returns the result.
+ii) Exponentiation (np.exp):- The np.exp() function calculates the exponential of each element in an array.
 
 ![image](https://github.com/user-attachments/assets/a99e24d3-f2e3-48f1-a119-9b2cc04e2995)
 
-Sum: Adds all elements together.
+i) Sum: Adds all elements together.
 
-Max: Finds the largest value in the array.
+ii)Max: Finds the largest value in the array.
 
-Min: Finds the smallest value in the array.
+iii)Min: Finds the smallest value in the array.
 
-Variance: Measures the spread of the data.
+iv)Variance: Measures the spread of the data.
 
-Sum Array: computes the sum of elements in an array, either across all elements or along a specified axis in the case of multidimensional arrays.
+v)Sum Array: computes the sum of elements in an array, either across all elements or along a specified axis in the case of multidimensional arrays.
 
 * Logical Operator: -
 
